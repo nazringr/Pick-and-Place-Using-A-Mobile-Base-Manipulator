@@ -4,7 +4,6 @@
 ## Overview
 This repository contains a ROS2-based simulation package for a mobile base manipulator designed for autonomous pick-and-place tasks. The manipulator arm selected for this project is the UR3e manipulator, integrated with a mobile base to move the arm around and pick objects in an environment. This system uses forward and inverse kinematics, with a vacuum gripper and LiDAR sensor for object detection and manipulation.
 
-![Project1](pictures/Project1.gif)
 
 ## Instructions to Build
 
@@ -36,26 +35,42 @@ This repository contains a ROS2-based simulation package for a mobile base manip
 
 The design of the mobile manipulator, including the mobile base and manipulator arm, is shown below:
 
-![Mobile Manipulator CAD](pictures/MobileManipulatorCAD.png)
+<div align="center">
+  <img src="pictures/MobileManipulatorCAD.png" width="400" />
+</div>
 
 This diagram illustrates the frame assignment used for kinematics in the manipulator:
 
-![Frame Assignment](pictures/FrameAssignment.png)
+<div align="center">
+  <img src="pictures/FrameAssignment.png" width="200" />
+</div>
 
 ## Application & Control
 The system autonomously detects, picks up, and places objects. An open-loop control method, with no PID controllers, is used for simplicity in the task execution. Visualization is done via Gazebo and RViz.
 
 The following image shows the inverse kinematics validation and trajectory planning for the mobile manipulator:
 
-![IK Validation & Trajectory](pictures/IK_Val_Trajectory.png)
+<div align="center">
+  <img src="pictures/IK_Val_Trajectory.png" width="400" />
+</div>
 
 This image demonstrates the forward kinematics and the position of the robot in its workspace:
 
-![FK Robot Position](pictures/FK_Robot_Position.png)
+<div align="center">
+  <img src="pictures/FK_Robot_Positions.png" width="400" />
+</div>
 
 The robot's movement and visualization in RViz are illustrated below:
 
-![RViz Visualization](pictures/RViz_Visual.png)
+<div align="center">
+  <img src="pictures/RViz_Visual.png" width="400" />
+</div>
+
+
+
+<div align="center">
+  <img src="pictures/Project1.gif" width="500" />
+</div>
 
 ## Challenges & Lessons
 - Integration of a vacuum gripper posed challenges in object handling, and the camera unit wasn’t fully implemented.
